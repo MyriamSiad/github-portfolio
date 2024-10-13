@@ -54,6 +54,7 @@
           <li><a href="#competences">Compétences</a></li>
           <li><a href="#CV">Expérience</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="service-details.html">Veille Informatique</a></li>
           <li><a ></a></li>
           <li><a ></a></li>
         
@@ -87,17 +88,21 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <section id="hero" class="hero section dark-background" style="position: relative;">
 
-      <img src="assets/img/wall.jpg" alt="" data-aos="fade-in">
-
-      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+      <!-- Video en arrière-plan -->
+      <video autoplay muted loop id="myVideo" data-aos="fade-in" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
+        <source src="assets/img/video/video3.mp4" type="video/mp4">
+      </video>
+    
+      <!-- Texte au-dessus de la vidéo -->
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100" style="position: relative; z-index: 2; color: rgb(255, 255, 255);">
         <h2>Bonjour, je m'appelle Myriam SIAD</h2>
         <p><span class="typed" data-typed-items="Etudiante en programmation"></span></p>
       </div>
-
-    </section><!-- /Hero Section -->
+    
+    </section>
+    
 
     <!-- About Section -->
     <section id="Apropos" class="about section">
