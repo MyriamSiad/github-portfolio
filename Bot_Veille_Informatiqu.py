@@ -1,10 +1,7 @@
+
 import feedparser
 from flask import Flask, render_template
-import requests
 from bs4 import BeautifulSoup
-from docutils.nodes import title
-
-from numpy.f2py.crackfortran import entrypattern
 
 ## Création d'un fichier XML Google Actualités sur Inoreader contenant le Flux de recherche Machine Learning
 ## url : 'https://news.google.com/news/rss/search?q=Machine%20learning&hl=fr-FR&gl=FR&ceid=FR:fr'
