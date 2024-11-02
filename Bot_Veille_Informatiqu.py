@@ -27,7 +27,8 @@ def derniers_articles():
 @app.route("/")
 def index():
     articles = derniers_articles()
-    return render_template("veille_informatique.html", articles=articles)
+    render_template("veille_informatique.html", articles=articles)
+    return render_template("index.html", articles=articles)
 
 if __name__ == "__main__":
     app.run(debug=True)
