@@ -2,7 +2,7 @@
 import feedparser
 from flask import Flask, render_template
 from bs4 import BeautifulSoup
-from werkzeug.urls import urlencode
+from urllib.parse import urlencode
 ## Création d'un fichier XML Google Actualités sur Inoreader contenant le Flux de recherche Machine Learning
 ## url : 'https://news.google.com/news/rss/search?q=Machine%20learning&hl=fr-FR&gl=FR&ceid=FR:fr'
 
@@ -27,8 +27,9 @@ def derniers_articles():
 @app.route("/")
 def index():
     articles = derniers_articles()
-    render_template("veille_informatique.html", articles=articles)
-    return render_template("index.html", articles=articles)
+    return render_template("index.html",articles=articles)
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)
